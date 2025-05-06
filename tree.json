@@ -1,0 +1,524 @@
+{
+  "question": "Aké vyšetrenia ste doteraz absolvovali kvôli stratám vedomia: HUT test (áno/nie)",
+  "feature": "Q4",
+  "type": "binary",
+  "answers": {
+    "1": {
+      "question": "Na aké ochorenia ste sa doteraz liečili: Alergie (áno/nie)",
+      "feature": "P34",
+      "type": "binary",
+      "answers": {
+        "1": {
+          "question": "Na aké ochorenia ste sa doteraz liečili: Prekonané úrazy (áno/nie)",
+          "feature": "P33",
+          "type": "binary",
+          "answers": {
+            "1": {
+              "result": "Pozitívny HUT"
+            },
+            "0": {
+              "result": "Negatívny HUT"
+            }
+          }
+        },
+        "0": {
+          "result": "Pozitívny HUT"
+        }
+      }
+    },
+    "0": {
+      "question": "Čo viedlo k strate vedomia: Nepríjemné emócie (áno/nie)",
+      "feature": "E5",
+      "type": "binary",
+      "answers": {
+        "1": {
+          "question": "Ak boli prítomní svedkovia, ako dlho podľa nich trvalo bezvedomie: Bezvedomie trvalo viac ako 5 minút (áno/nie)",
+          "feature": "K4",
+          "type": "binary",
+          "answers": {
+            "1": {
+              "question": "Vek",
+              "feature": "Vek",
+              "type": "numeric",
+              "threshold": 41.5,
+              "answers": {
+                "yes": {
+                  "result": "Negatívny HUT"
+                },
+                "no": {
+                  "question": "Aké vyšetrenia ste doteraz absolvovali kvôli stratám vedomia: CT alebo MRI mozgu (áno/nie)",
+                  "feature": "Q12",
+                  "type": "binary",
+                  "answers": {
+                    "1": {
+                      "result": "Negatívny HUT"
+                    },
+                    "0": {
+                      "question": "Cítili tesne pred stratou vedomia: Pocit na zvracanie (áno/nie)",
+                      "feature": "H1",
+                      "type": "binary",
+                      "answers": {
+                        "1": {
+                          "result": "Negatívny HUT"
+                        },
+                        "0": {
+                          "question": "Vek ",
+                          "feature": "Vek",
+                          "type": "numeric",
+                          "threshold": 20.0,
+                          "answers": {
+                            "yes": {
+                              "result": "Pozitívny HUT"
+                            },
+                            "no": {
+                              "result": "Negatívny HUT"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "0": {
+              "question": "Na aké ochorenia ste sa doteraz liečili: Ochorenia štítnej žľazy (áno/nie)",
+              "feature": "P21",
+              "type": "binary",
+              "answers": {
+                "1": {
+                  "result": "Negatívny HUT"
+                },
+                "0": {
+                  "question": "Na aké ochorenia ste sa doteraz liečili: Astma (áno/nie)",
+                  "feature": "P16",
+                  "type": "binary",
+                  "answers": {
+                    "1": {
+                      "question": "Na aké ochorenia ste sa doteraz liečili: Depresia (áno/nie)",
+                      "feature": "P27",
+                      "type": "binary",
+                      "answers": {
+                        "1": {
+                          "result": "Negatívny HUT"
+                        },
+                        "0": {
+                          "question": "Tažkosti / V akej situácii vznikli: Strata vedomia do 1 minúty po postavení sa (áno/nie)",
+                          "feature": "D2",
+                          "type": "binary",
+                          "answers": {
+                            "1": {
+                              "question": "Pamätáte si na udalosti po strate vedomia: Poranenie pri páde (áno/nie)",
+                              "feature": "N2",
+                              "type": "binary",
+                              "answers": {
+                                "1": {
+                                  "result": "Pozitívny HUT"
+                                },
+                                "0": {
+                                  "result": "Negatívny HUT"
+                                }
+                              }
+                            },
+                            "0": {
+                              "result": "Pozitívny HUT"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "0": {
+                      "result": "Negatívny HUT"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "0": {
+          "question": "Cítili tesne pred stratou vedomia: Zahmlievanie pred očami (áno/nie)",
+          "feature": "H4",
+          "type": "binary",
+          "answers": {
+            "1": {
+              "question": "Kŕče počas bezvedomia (áno/nie)",
+              "feature": "L",
+              "type": "binary",
+              "answers": {
+                "1": {
+                  "question": "Vek pri najhoršom stave",
+                  "feature": "C4",
+                  "type": "numeric",
+                  "threshold": 20.5,
+                  "answers": {
+                    "yes": {
+                      "question": "Cítili tesne pred stratou vedomia: Nepamätám sa (áno/nie)",
+                      "feature": "H13",
+                      "type": "binary",
+                      "answers": {
+                        "1": {
+                          "question": "Pamätáte si na udalosti po strate vedomia: Dezorientácia > 30 minút (áno/nie)",
+                          "feature": "N3",
+                          "type": "binary",
+                          "answers": {
+                            "1": {
+                              "result": "Pozitívny HUT"
+                            },
+                            "0": {
+                              "question": "Vek pri začiatku ťažkostí",
+                              "feature": "C1",
+                              "type": "numeric",
+                              "threshold": 41.5,
+                              "answers": {
+                                "yes": {
+                                  "result": "Pozitívny HUT"
+                                },
+                                "no": {
+                                  "result": "Negatívny HUT"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "0": {
+                          "question": "Na aké ochorenia ste sa doteraz liečili: Bolesti chrbta (áno/nie)",
+                          "feature": "P29",
+                          "type": "binary",
+                          "answers": {
+                            "1": {
+                              "question": "Na aké ochorenia ste sa doteraz liečili: Prekonané operácie (áno/nie)",
+                              "feature": "P32",
+                              "type": "binary",
+                              "answers": {
+                                "1": {
+                                  "question": "Na aké ochorenia ste sa doteraz liečili: Endokrinologické ochorenia (áno/nie)",
+                                  "feature": "P22",
+                                  "type": "binary",
+                                  "answers": {
+                                    "1": {
+                                      "result": "Negatívny HUT"
+                                    },
+                                    "0": {
+                                      "result": "Pozitívny HUT"
+                                    }
+                                  }
+                                },
+                                "0": {
+                                  "question": "Čo viedlo k strate vedomia: Medicínsky výkon (áno/nie)",
+                                  "feature": "E6",
+                                  "type": "binary",
+                                  "answers": {
+                                    "1": {
+                                      "result": "Pozitívny HUT"
+                                    },
+                                    "0": {
+                                      "result": "Negatívny HUT"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "0": {
+                              "question": "Vek pri poslednom odpadnutí",
+                              "feature": "C3",
+                              "type": "numeric",
+                              "threshold": 47.0,
+                              "answers": {
+                                "yes": {
+                                  "result": "Pozitívny HUT"
+                                },
+                                "no": {
+                                  "question": "Vek",
+                                  "feature": "Vek",
+                                  "type": "numeric",
+                                  "threshold": 46.0,
+                                  "answers": {
+                                    "yes": {
+                                      "result": "Negatívny HUT"
+                                    },
+                                    "no": {
+                                      "question": "Čo viedlo k strate vedomia: Menštruácia (áno/nie)",
+                                      "feature": "E9",
+                                      "type": "binary",
+                                      "answers": {
+                                        "1": {
+                                          "result": "Pozitívny HUT"
+                                        },
+                                        "0": {
+                                          "result": "Pozitívny HUT"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "no": {
+                      "question": "Tažkosti / V akej situácii vznikli: Strata vedomia v sede (áno/nie)",
+                      "feature": "D5",
+                      "type": "binary",
+                      "answers": {
+                        "1": {
+                          "question": "Vek pri začiatku ťažkostí",
+                          "feature": "C1",
+                          "type": "numeric",
+                          "threshold": 21.5,
+                          "answers": {
+                            "yes": {
+                              "result": "Negatívny HUT"
+                            },
+                            "no": {
+                              "result": "Pozitívny HUT"
+                            }
+                          }
+                        },
+                        "0": {
+                          "question": "Na aké ochorenia ste sa doteraz liečili: Ochorenia krčnej chrbtice (áno/nie)",
+                          "feature": "P28",
+                          "type": "binary",
+                          "answers": {
+                            "1": {
+                              "result": "Pozitívny HUT"
+                            },
+                            "0": {
+                              "result": "Negatívny HUT"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "0": {
+                  "question": "Pamätáte si na udalosti po strate vedomia: Nevoľnosť po prebratí (áno/nie)",
+                  "feature": "N5",
+                  "type": "binary",
+                  "answers": {
+                    "1": {
+                      "question": "Na aké ochorenia ste sa doteraz liečili: Reumatologické ochorenia (áno/nie)",
+                      "feature": "P30",
+                      "type": "binary",
+                      "answers": {
+                        "1": {
+                          "result": "Negatívny HUT"
+                        },
+                        "0": {
+                          "result": "Pozitívny HUT"
+                        }
+                      }
+                    },
+                    "0": {
+                      "question": "Čo viedlo k strate vedomia: Dusné prostredie (áno/nie)",
+                      "feature": "E2",
+                      "type": "binary",
+                      "answers": {
+                        "1": {
+                          "result": "Pozitívny HUT"
+                        },
+                        "0": {
+                          "question": "Vek pri začiatku ťažkostí ",
+                          "feature": "C1",
+                          "type": "numeric",
+                          "threshold": 45.0,
+                          "answers": {
+                            "yes": {
+                              "result": "Pozitívny HUT"
+                            },
+                            "no": {
+                              "result": "Negatívny HUT"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "0": {
+              "question": "Kŕče počas bezvedomia (áno/nie)",
+              "feature": "L",
+              "type": "binary",
+              "answers": {
+                "1": {
+                  "question": "Na aké ochorenia ste sa doteraz liečili: Srdcové arytmie (áno/nie)",
+                  "feature": "P6",
+                  "type": "binary",
+                  "answers": {
+                    "1": {
+                      "result": "Pozitívny HUT"
+                    },
+                    "0": {
+                      "question": "Vek pri poslednom odpadnutí",
+                      "feature": "C3",
+                      "type": "numeric",
+                      "threshold": 19.5,
+                      "answers": {
+                        "yes": {
+                          "question": "Na aké ochorenia ste sa doteraz liečili: Neurologické ochorenia (áno/nie)",
+                          "feature": "P24",
+                          "type": "binary",
+                          "answers": {
+                            "1": {
+                              "question": "Ako dlho trvali tieto pocity pred stratou vedomia: Viac ako 5 minút (áno/nie)",
+                              "feature": "I4",
+                              "type": "binary",
+                              "answers": {
+                                "1": {
+                                  "result": "Negatívny HUT"
+                                },
+                                "0": {
+                                  "question": "Cítili tesne pred stratou vedomia: Nepociťoval som nič zvláštne (áno/nie)",
+                                  "feature": "H12",
+                                  "type": "binary",
+                                  "answers": {
+                                    "1": {
+                                      "result": "Negatívny HUT"
+                                    },
+                                    "0": {
+                                      "result": "Pozitívny HUT"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "0": {
+                              "question": "Na aké ochorenia ste sa doteraz liečili: Bolesti chrbta (áno/nie)",
+                              "feature": "P29",
+                              "type": "binary",
+                              "answers": {
+                                "1": {
+                                  "question": "Ako dlho trvali tieto pocity pred stratou vedomia: Do 1 minúty (áno/nie)",
+                                  "feature": "I2",
+                                  "type": "binary",
+                                  "answers": {
+                                    "1": {
+                                      "result": "Negatívny HUT"
+                                    },
+                                    "0": {
+                                      "result": "Pozitívny HUT"
+                                    }
+                                  }
+                                },
+                                "0": {
+                                  "question": "Aké vyšetrenia ste doteraz absolvovali kvôli stratám vedomia: Neurologické vyšetrenia (áno/nie)",
+                                  "feature": "Q10",
+                                  "type": "binary",
+                                  "answers": {
+                                    "1": {
+                                      "result": "Negatívny HUT"
+                                    },
+                                    "0": {
+                                      "question": "Na aké ochorenia ste sa doteraz liečili: Endokrinologické ochorenia (áno/nie)",
+                                      "feature": "P22",
+                                      "type": "binary",
+                                      "answers": {
+                                        "1": {
+                                          "result": "Pozitívny HUT"
+                                        },
+                                        "0": {
+                                          "result": "Negatívny HUT"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "no": {
+                          "result": "Pozitívny HUT"
+                        }
+                      }
+                    }
+                  }
+                },
+                "0": {
+                  "question": "Tažkosti / V akej situácii vznikli: Strata vedomia pri chôdzi (áno/nie)",
+                  "feature": "D3",
+                  "type": "binary",
+                  "answers": {
+                    "1": {
+                      "question": "Aké vyšetrenia ste doteraz absolvovali kvôli stratám vedomia: Endokrinologické vyšetrenie (áno/nie)",
+                      "feature": "Q16",
+                      "type": "binary",
+                      "answers": {
+                        "1": {
+                          "result": "Pozitívny HUT"
+                        },
+                        "0": {
+                          "result": "Negatívny HUT"
+                        }
+                      }
+                    },
+                    "0": {
+                      "question": "Vek pri začiatku ťažkostí ",
+                      "feature": "C1",
+                      "type": "numeric",
+                      "threshold": 44.5,
+                      "answers": {
+                        "yes": {
+                          "question": "Na aké ochorenia ste sa doteraz liečili: Ochorenie srdca_3 (áno/nie)",
+                          "feature": "P1",
+                          "type": "binary",
+                          "answers": {
+                            "1": {
+                              "result": "Pozitívny HUT"
+                            },
+                            "0": {
+                              "result": "Negatívny HUT"
+                            }
+                          }
+                        },
+                        "no": {
+                          "question": "Čo viedlo k strate vedomia: Bolesť (áno/nie)",
+                          "feature": "E7",
+                          "type": "binary",
+                          "answers": {
+                            "1": {
+                              "result": "Negatívny HUT"
+                            },
+                            "0": {
+                              "question": "Na aké ochorenia ste sa doteraz liečili: Ochorenie srdca_3 (áno/nie)",
+                              "feature": "P1",
+                              "type": "binary",
+                              "answers": {
+                                "1": {
+                                  "question": "Vek",
+                                  "feature": "Vek",
+                                  "type": "numeric",
+                                  "threshold": 58.0,
+                                  "answers": {
+                                    "yes": {
+                                      "result": "Negatívny HUT"
+                                    },
+                                    "no": {
+                                      "result": "Pozitívny HUT"
+                                    }
+                                  }
+                                },
+                                "0": {
+                                  "result": "Pozitívny HUT"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
