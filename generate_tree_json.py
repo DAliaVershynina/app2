@@ -95,6 +95,12 @@ MAX_DEPTH = None
 
 # Признаки, которые являются числовыми
 numeric_features = {"Vek", "C1", "C3", "C4"}
+def compute_confidence(value):
+    total = np.sum(value)
+    if total == 0:
+        return 0.0
+    confidence = np.max(value) / total
+    return round(confidence * 100, 2)
 
 def tree_to_json_limited(tree, feature_names, node=0, depth=0):
     tree_ = tree.tree_
@@ -103,10 +109,10 @@ def tree_to_json_limited(tree, feature_names, node=0, depth=0):
         for i in tree_.feature
     ]
 
-    if depth >= MAX_DEPTH or tree_.feature[node] == _tree.TREE_UNDEFINED:
+    if MAX_DEPTH is not None and depth >= MAX_DEPTH or tree_.feature[node] == _tree.TREE_UNDEFINED:
         value = tree_.value[node][0]
         class_idx = int(np.argmax(value))
-        return {"result": "Pozitívny HUT" if class_idx == 1 else "Negatívny HUT"}
+        return {"result": "Pozitívny HUT" if class_idx == 1 else "Negatívny HUT", "confidence": compute_confidence(value)}
 
     name = feature_name[node]
     label = labels.get(name, name)
