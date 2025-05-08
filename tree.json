@@ -14,15 +14,18 @@
           "type": "binary",
           "answers": {
             "1": {
-              "result": "Pozitívny HUT"
+              "result": "Pozitívny HUT",
+              "confidence": 100.0
             },
             "0": {
-              "result": "Negatívny HUT"
+              "result": "Negatívny HUT",
+              "confidence": 100.0
             }
           }
         },
         "0": {
-          "result": "Pozitívny HUT"
+          "result": "Pozitívny HUT",
+          "confidence": 100.0
         }
       }
     },
@@ -43,7 +46,8 @@
               "threshold": 41.5,
               "answers": {
                 "yes": {
-                  "result": "Negatívny HUT"
+                  "result": "Negatívny HUT",
+                  "confidence": 95.97
                 },
                 "no": {
                   "question": "Aké vyšetrenia ste doteraz absolvovali kvôli stratám vedomia: CT alebo MRI mozgu (áno/nie)",
@@ -51,7 +55,8 @@
                   "type": "binary",
                   "answers": {
                     "1": {
-                      "result": "Negatívny HUT"
+                      "result": "Negatívny HUT",
+                      "confidence": 100.0
                     },
                     "0": {
                       "question": "Cítili tesne pred stratou vedomia: Pocit na zvracanie (áno/nie)",
@@ -59,19 +64,22 @@
                       "type": "binary",
                       "answers": {
                         "1": {
-                          "result": "Negatívny HUT"
+                          "result": "Negatívny HUT",
+                          "confidence": 100.0
                         },
                         "0": {
-                          "question": "Vek ",
+                          "question": "Vek",
                           "feature": "Vek",
                           "type": "numeric",
                           "threshold": 20.0,
                           "answers": {
                             "yes": {
-                              "result": "Pozitívny HUT"
+                              "result": "Pozitívny HUT",
+                              "confidence": 100.0
                             },
                             "no": {
-                              "result": "Negatívny HUT"
+                              "result": "Negatívny HUT",
+                              "confidence": 100.0
                             }
                           }
                         }
@@ -87,7 +95,8 @@
               "type": "binary",
               "answers": {
                 "1": {
-                  "result": "Negatívny HUT"
+                  "result": "Negatívny HUT",
+                  "confidence": 100.0
                 },
                 "0": {
                   "question": "Na aké ochorenia ste sa doteraz liečili: Astma (áno/nie)",
@@ -100,7 +109,8 @@
                       "type": "binary",
                       "answers": {
                         "1": {
-                          "result": "Negatívny HUT"
+                          "result": "Negatívny HUT",
+                          "confidence": 100.0
                         },
                         "0": {
                           "question": "Tažkosti / V akej situácii vznikli: Strata vedomia do 1 minúty po postavení sa (áno/nie)",
@@ -113,22 +123,26 @@
                               "type": "binary",
                               "answers": {
                                 "1": {
-                                  "result": "Pozitívny HUT"
+                                  "result": "Pozitívny HUT",
+                                  "confidence": 100.0
                                 },
                                 "0": {
-                                  "result": "Negatívny HUT"
+                                  "result": "Negatívny HUT",
+                                  "confidence": 100.0
                                 }
                               }
                             },
                             "0": {
-                              "result": "Pozitívny HUT"
+                              "result": "Pozitívny HUT",
+                              "confidence": 100.0
                             }
                           }
                         }
                       }
                     },
                     "0": {
-                      "result": "Negatívny HUT"
+                      "result": "Negatívny HUT",
+                      "confidence": 100.0
                     }
                   }
                 }
@@ -163,19 +177,22 @@
                           "type": "binary",
                           "answers": {
                             "1": {
-                              "result": "Pozitívny HUT"
+                              "result": "Pozitívny HUT",
+                              "confidence": 100.0
                             },
                             "0": {
-                              "question": "Vek pri začiatku ťažkostí",
+                              "question": "Vek pri začiatku ťažkostí?",
                               "feature": "C1",
                               "type": "numeric",
                               "threshold": 41.5,
                               "answers": {
                                 "yes": {
-                                  "result": "Pozitívny HUT"
+                                  "result": "Pozitívny HUT",
+                                  "confidence": 100.0
                                 },
                                 "no": {
-                                  "result": "Negatívny HUT"
+                                  "result": "Negatívny HUT",
+                                  "confidence": 100.0
                                 }
                               }
                             }
@@ -197,10 +214,12 @@
                                   "type": "binary",
                                   "answers": {
                                     "1": {
-                                      "result": "Negatívny HUT"
+                                      "result": "Negatívny HUT",
+                                      "confidence": 100.0
                                     },
                                     "0": {
-                                      "result": "Pozitívny HUT"
+                                      "result": "Pozitívny HUT",
+                                      "confidence": 100.0
                                     }
                                   }
                                 },
@@ -210,10 +229,12 @@
                                   "type": "binary",
                                   "answers": {
                                     "1": {
-                                      "result": "Pozitívny HUT"
+                                      "result": "Pozitívny HUT",
+                                      "confidence": 100.0
                                     },
                                     "0": {
-                                      "result": "Negatívny HUT"
+                                      "result": "Negatívny HUT",
+                                      "confidence": 100.0
                                     }
                                   }
                                 }
@@ -226,7 +247,8 @@
                               "threshold": 47.0,
                               "answers": {
                                 "yes": {
-                                  "result": "Pozitívny HUT"
+                                  "result": "Pozitívny HUT",
+                                  "confidence": 100.0
                                 },
                                 "no": {
                                   "question": "Vek",
@@ -235,7 +257,8 @@
                                   "threshold": 46.0,
                                   "answers": {
                                     "yes": {
-                                      "result": "Negatívny HUT"
+                                      "result": "Negatívny HUT",
+                                      "confidence": 100.0
                                     },
                                     "no": {
                                       "question": "Čo viedlo k strate vedomia: Menštruácia (áno/nie)",
@@ -243,10 +266,57 @@
                                       "type": "binary",
                                       "answers": {
                                         "1": {
-                                          "result": "Pozitívny HUT"
+                                          "question": "Pamätáte si na udalosti po strate vedomia: Cítil/a sa normálne (áno/nie)",
+                                          "feature": "N6",
+                                          "type": "binary",
+                                          "answers": {
+                                            "1": {
+                                              "question": "Čo ste urobili pri hroziacej strate vedomia: Ľahol som si (áno/nie)",
+                                              "feature": "J2",
+                                              "type": "binary",
+                                              "answers": {
+                                                "1": {
+                                                  "result": "Negatívny HUT",
+                                                  "confidence": 100.0
+                                                },
+                                                "0": {
+                                                  "result": "Pozitívny HUT",
+                                                  "confidence": 100.0
+                                                }
+                                              }
+                                            },
+                                            "0": {
+                                              "result": "Pozitívny HUT",
+                                              "confidence": 100.0
+                                            }
+                                          }
                                         },
                                         "0": {
-                                          "result": "Pozitívny HUT"
+                                          "question": "Vek pri začiatku ťažkostí?",
+                                          "feature": "C1",
+                                          "type": "numeric",
+                                          "threshold": 21.5,
+                                          "answers": {
+                                            "yes": {
+                                              "result": "Pozitívny HUT",
+                                              "confidence": 100.0
+                                            },
+                                            "no": {
+                                              "question": "Pamätáte si na udalosti po strate vedomia: Nevoľnosť po prebratí (áno/nie)",
+                                              "feature": "N5",
+                                              "type": "binary",
+                                              "answers": {
+                                                "1": {
+                                                  "result": "Pozitívny HUT",
+                                                  "confidence": 100.0
+                                                },
+                                                "0": {
+                                                  "result": "Negatívny HUT",
+                                                  "confidence": 100.0
+                                                }
+                                              }
+                                            }
+                                          }
                                         }
                                       }
                                     }
@@ -270,10 +340,12 @@
                           "threshold": 21.5,
                           "answers": {
                             "yes": {
-                              "result": "Negatívny HUT"
+                              "result": "Negatívny HUT",
+                              "confidence": 100.0
                             },
                             "no": {
-                              "result": "Pozitívny HUT"
+                              "result": "Pozitívny HUT",
+                              "confidence": 100.0
                             }
                           }
                         },
@@ -283,10 +355,12 @@
                           "type": "binary",
                           "answers": {
                             "1": {
-                              "result": "Pozitívny HUT"
+                              "result": "Pozitívny HUT",
+                              "confidence": 100.0
                             },
                             "0": {
-                              "result": "Negatívny HUT"
+                              "result": "Negatívny HUT",
+                              "confidence": 100.0
                             }
                           }
                         }
@@ -305,10 +379,12 @@
                       "type": "binary",
                       "answers": {
                         "1": {
-                          "result": "Negatívny HUT"
+                          "result": "Negatívny HUT",
+                          "confidence": 100.0
                         },
                         "0": {
-                          "result": "Pozitívny HUT"
+                          "result": "Pozitívny HUT",
+                          "confidence": 100.0
                         }
                       }
                     },
@@ -318,19 +394,22 @@
                       "type": "binary",
                       "answers": {
                         "1": {
-                          "result": "Pozitívny HUT"
+                          "result": "Pozitívny HUT",
+                          "confidence": 100.0
                         },
                         "0": {
-                          "question": "Vek pri začiatku ťažkostí ",
+                          "question": "Vek pri začiatku ťažkostí",
                           "feature": "C1",
                           "type": "numeric",
                           "threshold": 45.0,
                           "answers": {
                             "yes": {
-                              "result": "Pozitívny HUT"
+                              "result": "Pozitívny HUT",
+                              "confidence": 100.0
                             },
                             "no": {
-                              "result": "Negatívny HUT"
+                              "result": "Negatívny HUT",
+                              "confidence": 100.0
                             }
                           }
                         }
@@ -351,7 +430,8 @@
                   "type": "binary",
                   "answers": {
                     "1": {
-                      "result": "Pozitívny HUT"
+                      "result": "Pozitívny HUT",
+                      "confidence": 100.0
                     },
                     "0": {
                       "question": "Vek pri poslednom odpadnutí",
@@ -370,7 +450,8 @@
                               "type": "binary",
                               "answers": {
                                 "1": {
-                                  "result": "Negatívny HUT"
+                                  "result": "Negatívny HUT",
+                                  "confidence": 100.0
                                 },
                                 "0": {
                                   "question": "Cítili tesne pred stratou vedomia: Nepociťoval som nič zvláštne (áno/nie)",
@@ -378,10 +459,12 @@
                                   "type": "binary",
                                   "answers": {
                                     "1": {
-                                      "result": "Negatívny HUT"
+                                      "result": "Negatívny HUT",
+                                      "confidence": 100.0
                                     },
                                     "0": {
-                                      "result": "Pozitívny HUT"
+                                      "result": "Pozitívny HUT",
+                                      "confidence": 100.0
                                     }
                                   }
                                 }
@@ -398,10 +481,12 @@
                                   "type": "binary",
                                   "answers": {
                                     "1": {
-                                      "result": "Negatívny HUT"
+                                      "result": "Negatívny HUT",
+                                      "confidence": 100.0
                                     },
                                     "0": {
-                                      "result": "Pozitívny HUT"
+                                      "result": "Pozitívny HUT",
+                                      "confidence": 100.0
                                     }
                                   }
                                 },
@@ -411,7 +496,8 @@
                                   "type": "binary",
                                   "answers": {
                                     "1": {
-                                      "result": "Negatívny HUT"
+                                      "result": "Negatívny HUT",
+                                      "confidence": 100.0
                                     },
                                     "0": {
                                       "question": "Na aké ochorenia ste sa doteraz liečili: Endokrinologické ochorenia (áno/nie)",
@@ -419,10 +505,46 @@
                                       "type": "binary",
                                       "answers": {
                                         "1": {
-                                          "result": "Pozitívny HUT"
+                                          "result": "Pozitívny HUT",
+                                          "confidence": 100.0
                                         },
                                         "0": {
-                                          "result": "Negatívny HUT"
+                                          "question": "Vek pri začiatku ťažkostí",
+                                          "feature": "C1",
+                                          "type": "numeric",
+                                          "threshold": 44.0,
+                                          "answers": {
+                                            "yes": {
+                                              "result": "Pozitívny HUT",
+                                              "confidence": 100.0
+                                            },
+                                            "no": {
+                                              "question": "Cítili tesne pred stratou vedomia: Potenie (áno/nie)",
+                                              "feature": "H3",
+                                              "type": "binary",
+                                              "answers": {
+                                                "1": {
+                                                  "question": "Čo viedlo k strate vedomia: Teplé prostredie (áno/nie)",
+                                                  "feature": "E3",
+                                                  "type": "binary",
+                                                  "answers": {
+                                                    "1": {
+                                                      "result": "Negatívny HUT",
+                                                      "confidence": 100.0
+                                                    },
+                                                    "0": {
+                                                      "result": "Pozitívny HUT",
+                                                      "confidence": 100.0
+                                                    }
+                                                  }
+                                                },
+                                                "0": {
+                                                  "result": "Negatívny HUT",
+                                                  "confidence": 94.21
+                                                }
+                                              }
+                                            }
+                                          }
                                         }
                                       }
                                     }
@@ -433,7 +555,8 @@
                           }
                         },
                         "no": {
-                          "result": "Pozitívny HUT"
+                          "result": "Pozitívny HUT",
+                          "confidence": 100.0
                         }
                       }
                     }
@@ -450,29 +573,33 @@
                       "type": "binary",
                       "answers": {
                         "1": {
-                          "result": "Pozitívny HUT"
+                          "result": "Pozitívny HUT",
+                          "confidence": 100.0
                         },
                         "0": {
-                          "result": "Negatívny HUT"
+                          "result": "Negatívny HUT",
+                          "confidence": 100.0
                         }
                       }
                     },
                     "0": {
-                      "question": "Vek pri začiatku ťažkostí ",
+                      "question": "Vek pri začiatku ťažkostí",
                       "feature": "C1",
                       "type": "numeric",
                       "threshold": 44.5,
                       "answers": {
                         "yes": {
-                          "question": "Na aké ochorenia ste sa doteraz liečili: Ochorenie srdca_3 (áno/nie)",
+                          "question": "Na aké ochorenia ste sa doteraz liečili: Ochorenie srdca (áno/nie)",
                           "feature": "P1",
                           "type": "binary",
                           "answers": {
                             "1": {
-                              "result": "Pozitívny HUT"
+                              "result": "Pozitívny HUT",
+                              "confidence": 100.0
                             },
                             "0": {
-                              "result": "Negatívny HUT"
+                              "result": "Negatívny HUT",
+                              "confidence": 100.0
                             }
                           }
                         },
@@ -482,29 +609,33 @@
                           "type": "binary",
                           "answers": {
                             "1": {
-                              "result": "Negatívny HUT"
+                              "result": "Negatívny HUT",
+                              "confidence": 100.0
                             },
                             "0": {
-                              "question": "Na aké ochorenia ste sa doteraz liečili: Ochorenie srdca_3 (áno/nie)",
+                              "question": "Na aké ochorenia ste sa doteraz liečili: Ochorenie srdca (áno/nie)",
                               "feature": "P1",
                               "type": "binary",
                               "answers": {
                                 "1": {
-                                  "question": "Vek",
+                                  "question": "Vek > 58.0?",
                                   "feature": "Vek",
                                   "type": "numeric",
                                   "threshold": 58.0,
                                   "answers": {
                                     "yes": {
-                                      "result": "Negatívny HUT"
+                                      "result": "Negatívny HUT",
+                                      "confidence": 100.0
                                     },
                                     "no": {
-                                      "result": "Pozitívny HUT"
+                                      "result": "Pozitívny HUT",
+                                      "confidence": 100.0
                                     }
                                   }
                                 },
                                 "0": {
-                                  "result": "Pozitívny HUT"
+                                  "result": "Pozitívny HUT",
+                                  "confidence": 100.0
                                 }
                               }
                             }
