@@ -8,7 +8,7 @@
   <h2>{{ question }}</h2>
   <form method="post">
     {% if type == "numeric" %}
-      <input type="number" name="answer" step="any" required>
+      <input type="number" name="numeric_answer" step="any" required>
       <button type="submit">Potvrdiť</button>
     {% else %}
       <button name="answer" value="1">Áno</button>
