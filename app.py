@@ -28,7 +28,7 @@ def index():
         session.clear()
 
         # Úprava váženej istoty podľa metriky
-        accuracy = 0.714
+        accuracy = 0.750
         if result == "Pozitívny HUT":
             confidence_weighted = round(confidence * accuracy, 2)
         else:
