@@ -7,11 +7,11 @@ import joblib
 from flask import Flask, render_template
 import os
 
-app = Flask(__name__, template_folder=r'aplikacia\templates')
+app = Flask(__name__, template_folder='templates')
 
 
 # Načítanie modelu (predtým uloženého)
-model = joblib.load(r"C:\Users\admin\AppData\Roaming\JetBrains\PyCharm2024.2\extensions\code\git\aplikacia\best_rf_model.pkl")  # Nahraď cestu k svojmu modelu
+model = joblib.load("best_rf_model.pkl")  # Nahraď cestu k svojmu modelu
 ATTRIBUTES = [
     "B1", "B2", "B3", "B4", "C1", "C2", "C3",
     "D1", "D2", "D3", "D4", "D5", "D6",
