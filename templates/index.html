@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Predikcia HUT testu</title>
+</head>
+<body>
+    <h1>Predikcia výsledku HUT testu</h1>
+    <form method="POST">
+        {% for attr in attributes %}
+            <label for="{{ attr }}">{{ labels[attr] }}:</label><br>
+            <input type="text" name="{{ attr }}" placeholder="Zadajte hodnotu"><br><br>
+        {% endfor %}
+        <button type="submit">Vyhodnotiť</button>
+    </form>
+
+    {% if result %}
+        <h2>Výsledok predikcie</h2>
+        <p><strong>Pravdepodobnosť pozitívneho HUT testu:</strong> {{ result.positive }} %</p>
+        <p><strong>Pravdepodobnosť negatívneho HUT testu:</strong> {{ result.negative }} %</p>
+        <p><strong>Interpretácia:</strong> {{ result.interpretation }}</p>
+    {% endif %}
+</body>
+</html>
+
