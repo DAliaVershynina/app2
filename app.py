@@ -7,7 +7,8 @@ import joblib
 from flask import Flask, render_template
 import os
 
-app = Flask(__name__, template_folder='templates')
+template_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "templates")
+app = Flask(__name__, template_folder=template_dir)
 
 
 # Načítanie modelu (predtým uloženého)
